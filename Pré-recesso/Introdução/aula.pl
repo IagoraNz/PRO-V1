@@ -1,5 +1,4 @@
 somalista([], 0).
-
 somalista([Cabeca|Cauda], Soma) :-
     somalista(Cauda, SomaCauda),
     Soma is Cabeca + SomaCauda.
