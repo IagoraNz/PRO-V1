@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/iagot/OneDrive/Documentos/Prolog/aula",
-      "program": "c:/Users/iagot/OneDrive/Documentos/Prolog/aula/build/Debug/outDebug",
+      "cwd": "c:/Users/iagot/GitProlog/Prolog/Recesso",
+      "program": "c:/Users/iagot/GitProlog/Prolog/Recesso/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
