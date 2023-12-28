@@ -37,4 +37,3 @@ divisivel(X) :-
     write(X), nl,
     X2 is X - 4,
     divisivel(X2). 
-
