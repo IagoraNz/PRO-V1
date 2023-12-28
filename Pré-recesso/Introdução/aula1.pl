@@ -1,7 +1,11 @@
-estanalista(X, Lista) :-
+estanalista(X, Lista) :- % X esta na lista se...
     member(X, Lista).
 
-verificaelemento(X) :-
-    Lista = [1, 2, 3, 4, 5],
+verificaelemento() :-
+    %O usuario digita uma lista
+    write('Digite uma lista e o elemento a ser buscado: '),
+    read(Lista),
+    read(X),
     estanalista(X, Lista),
-    write('O '), write(X), write(' esta na lista.').
+    write('O '), write(X), write(' esta na lista.');
+    write('Nao esta na lista.').
