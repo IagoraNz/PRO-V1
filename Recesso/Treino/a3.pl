@@ -9,7 +9,7 @@ inicio() :-
     read(N2),
     read(N3),
 
-    Media is (N1 + N2 + N3) / 3,
+    Media is (N1 + N2 + N3) / 3, %Calcula a media
 
     write('Media: '), write(Media), nl,
     verificaMedia(Media).
@@ -19,11 +19,11 @@ verificaMedia(Media) :-
         Media >= 7,
         write('Aprovado');
 
-        Media >= 4,
+        Media >= 4, 
         write('Exame final'), nl,
         write('Digite a nota do exame final: '),
-        read(EF),
-        NMedia is (EF + Media) / 2,
+        read(EF), %Lê a nota do exame final
+        NMedia is (EF + Media) / 2, %Calcula a nova media
         write('Nova media: '), write(NMedia), nl,
         (
             NMedia >= 6,
