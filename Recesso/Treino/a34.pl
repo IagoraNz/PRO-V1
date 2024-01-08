@@ -1,3 +1,6 @@
+%1.34 Algoritmo de substituição de elementos de uma lista
+%Dado um elemento e uma lista, substituir todas as ocorrências do elemento na lista por outro elemento dado.
+
 main :-
     write('Digite uma lista: '),
     read(Lista),
