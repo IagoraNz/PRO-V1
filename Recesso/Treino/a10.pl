@@ -7,10 +7,8 @@ inicio() :-
 
 somaimpares(0, []).
 somaimpares(Soma, [H|T]) :-
-    (
-        H mod 2 =:= 1,
-        somaimpares(N, T),
-        Soma is N + H;
-
-        somaimpares(Soma, T)
-    ).
+    H mod 2 =:= 1,
+    somaimpares(Soma1, T),
+    Soma is Soma1 + H;
+    %Se não for impar, chama o próximo elemento do corpo
+    somaimpares(Soma, T).

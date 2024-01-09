@@ -12,6 +12,7 @@ comum(X, [H|T], L2) :-
     member(H, L2),
     comum(X1, T, L2),
     X is X1 + 1.
+
 comum(X, [H|T], L2) :-
     not(member(H, L2)),
     comum(X, T, L2).
