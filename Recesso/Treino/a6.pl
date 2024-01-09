@@ -10,4 +10,4 @@ imprimir([H|T]) :- %Caso recursivo
     imprimir(T). %Chama a função novamente para o resto da lista
 
 imprimir([_|T]) :- 
-    imprimir(T).%Chama a função novamente para o resto da lista
+    imprimir(T). %Chama a função novamente para o resto da lista

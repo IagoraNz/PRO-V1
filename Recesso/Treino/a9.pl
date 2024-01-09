@@ -1,3 +1,5 @@
+%1.9 Algoritmo que calcula a média dos elementos de uma lista.
+
 inicio() :-
     write('Digite uma lista: '),
     read(Lista),
