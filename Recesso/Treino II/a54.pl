@@ -13,8 +13,6 @@ main :-
 
 adicionaI(_, [], []).
 adicionaI(Elem, [H|T], [Elem, H|T]).
-adicionaI(Elem, [H|T], [H|T1]) :-
-    adicionaI(Elem, T, T1).
 
 adicionaF(Elem, [], [Elem]).
 adicionaF(Elem, [H|T], [H|T1]) :-
