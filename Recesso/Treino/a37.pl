@@ -6,7 +6,7 @@ amigo(ana, maria).
 amigo(maria, pedro).
 amigo(luiz, maria).
 amigo(luiz, andressa).
-amigo(andresa, carlos).
+amigo(andressa, carlos).
 
 main() :-
     write('Digite o nome da pessoa: '),

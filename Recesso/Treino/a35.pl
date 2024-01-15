@@ -27,12 +27,12 @@ media(Med, Lista) :-
     Med is Soma / Tam.
 
 subs(_, [], []).
-subs(Med, [H|T], [N|TSub]) :-
-    subs(Med, T, TSub),
+subs(Med, [H|T], [H1|T1]) :-
+    subs(Med, T, T1),
     (
         Med =< H,
-        N is 1;
+        H1 is 1;
 
         Med > H,
-        N is 0
+        H1 is 0
     ).

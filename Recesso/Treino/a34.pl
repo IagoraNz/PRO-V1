@@ -16,8 +16,8 @@ main :-
 
 substitui([], _, _, []).
 substitui([H|T], Elemento, Subst, [Elemento|TS]) :- %[Elemento|TS] é a lista que será retornada, Elemento está sendo inserido na cabeça da lista
-    H =:= Subst,
-    substitui(T, Elemento, Subst, TS). %TS é a lista que será retornada, T é a lista que está sendo percorrida
+    H =:= Subst, %se o elemento da cabeça for igual ao elemento a ser substituido
+    substitui(T, Elemento, Subst, TS).
 
 substitui([H|T], Elemento, Subst, [H|TS]) :-
     H =\= Subst,
