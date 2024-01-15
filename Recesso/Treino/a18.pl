@@ -22,14 +22,18 @@ main() :-
 
 busca([], [], _).
 busca([H|T], [H1|T1], Elem) :-
-    member(Elem, [H|T]), member(Elem, [H1|T1]),
+    membro(Elem, [H|T]), membro(Elem, [H1|T1]),
     write('Esta presente!'), nl;
 
-    member(Elem, [H|T]), not(member(Elem, [H1|T1])),
+    membro(Elem, [H|T]), not(membro(Elem, [H1|T1])),
     write('Somente na primeira lista'), nl;
 
-    not(member(Elem, [H|T])), member(Elem, [H1|T1]),
+    not(membro(Elem, [H|T])), membro(Elem, [H1|T1]),
     write('Somente na segunda lista'), nl;
 
-    not(member(Elem, [H|T])), not(member(Elem, [H1|T1])),
+    not(membro(Elem, [H|T])), not(membro(Elem, [H1|T1])),
     write('Em nenhuma lista'), nl.
+
+membro(X, [X|_]).
+membro(X, [_|T]) :- 
+    membro(X, T).

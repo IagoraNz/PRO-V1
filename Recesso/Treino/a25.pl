@@ -5,10 +5,10 @@ main() :-
     write('Digite a segunda lista: '),
     read(L2),
 
-    soma(SomaL, L1, L2),
-    write('A soma: '), write(SomaL).
+    soma(Soma, L1, L2),
+    write('A soma: '), write(Soma).
 
 soma(0, [], []).
-soma(SomaL, [H|T], [H1|T1]) :-
-    soma(SomaResto, T, T1),
-    SomaL is H + H1 + SomaResto.
+soma(Soma, [H|T], [H1|T1]) :-
+    soma(Soma1, T, T1),
+    Soma is Soma1 + H + H1.
