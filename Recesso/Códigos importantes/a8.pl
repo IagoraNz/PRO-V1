@@ -3,7 +3,7 @@
 inicio() :-
     write('Digite uma lista: '),
     read(Lista),
-    write('Digite outra lista: '),
+    write('Digite outra lista (para descobrir se e sublista): '),
     read(Lista2),
 
     sublista(Lista2, Lista),
