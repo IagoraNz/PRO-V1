@@ -11,4 +11,4 @@ main() :-
 soma(0, [], []).
 soma(Soma, [H|T], [H1|T1]) :-
     soma(Soma1, T, T1),
-    Soma is Soma1 + H + H1.
+    Soma is Soma1 + H + H1. %Soma que nem quando há 2 variáveis
