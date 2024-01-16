@@ -20,7 +20,6 @@ main() :-
 
     Cont \= s.
 
-busca([], [], _).
 busca([H|T], [H1|T1], Elem) :-
     membro(Elem, [H|T]), membro(Elem, [H1|T1]),
     write('Esta presente!'), nl;
